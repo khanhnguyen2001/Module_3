@@ -1,0 +1,3082 @@
+/*Login Page Design*/
+*{
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+}
+body{
+    background-color:black;
+    width: 100%;
+    height: 2200px;
+    position: absolute;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+.MainLoginDiv{
+    width: 100%;
+    height: 100%;
+    background-color:#E0E3EF;
+    position: fixed;
+    top: 0;
+}
+.stikydiv{
+    width: 100%;
+    height: 80px;
+    background-color:#3B5998 ;
+    position: fixed;
+}
+.Facebooktxt {
+    margin-left: 142px;
+    display: inline-block;
+    margin-top: 16px;
+    color:white;
+    font-family:Helvetica, Arial, sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+
+}
+.innerStikydiv{
+    width: 390px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    right: 141px;
+}
+#EmailBox{
+    width: 138px;
+    height: 17px;
+    margin-top: 30px;
+    outline: none;
+}
+#PasswordBox{
+    width: 135px;
+    height: 17px;
+    margin-left: 17px;
+    outline: none;
+}
+.loginbtn{
+    background-color: #3B5998;
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    color: white;
+    margin-left: 13px;
+    outline: none;
+}
+.loginbtn:hover{
+    background-color: #304c88;
+}
+.passtxt{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 18px;
+}
+.emailtxt{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    margin-top: 10px;
+}
+
+.CreateHeadtxt{
+    display: inline-block;
+    color:#333333 ;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top:75px;
+    right: 225px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.quicktxt{
+    font-size: 19px;
+    font-weight: 400;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #1d2129;
+    position: absolute;
+    display: inline-block;
+    top: 155px;
+    right: 412px;
+}
+.FormBox{
+    width: 417px;
+    height: 409px;
+    position: absolute;
+    top: 201px;
+    right: 149px;
+    font-family: Helvetica, Arial, sans-serif;
+    position: fixed;
+}
+#nameBox{
+    width: 194px;
+    height: 35px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+}
+#SurnameBox{
+    width: 194px;
+    height: 35px;
+    border-radius: 7px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+    margin-left: 10px;
+}
+#MobileBox{
+    width: 404px;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+}
+#passBox{
+    width: 404px;
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.459);
+}
+.dateOfbirth{
+    color: #90949c;
+    font-size: 16px;
+    font-weight: 700;
+}
+#day{
+    width: 58px;
+    height: 30px;
+}
+#month{
+    width: 73px;
+    height: 30px;
+}
+#year{
+    width: 73px;
+    height: 30px;
+}
+.GenderTxt{
+    color: #90949c;
+    font-size: 15px;
+    font-weight: 700;
+}
+.Femaletxt{
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0px 15px;
+}
+.maletxt{
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0px 15px;
+}
+.Othertxt{
+    color: #1d2129;
+    font-size: 18px;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0px 15px;
+}
+#FemaleCheckbox{
+    margin: 0px;
+}
+#maleCheckbox{
+    margin: 0px 0px;
+}
+#CustomCheckbox{
+    margin: 0px 0px;
+}
+.SignUpBtn{
+    margin: 21px 0px;
+    width: 198px;
+    height: 40px;
+    background-color: #68A254;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.btntxt{
+    font-size:19px;
+    color: #ffffff;
+    font-family: "Freight Sans Bold",   Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+    margin: 8px 63px;
+    position: absolute;
+}
+.termtxt{
+    font-weight: 400;
+    color: #90949c;
+    font-size: 11px;
+}
+.head-txt{
+    font-size:20px;
+    color:#0c2842;
+    font-weight: 700;
+    display: inline-block;
+    position: absolute;
+    margin: 100px 100px;
+    line-height: 29px;
+}
+.connectImg{
+    width: 536px;
+    height: 203px;
+    position: absolute;
+    top: 180px;
+    left: 99px;
+    background-image: url('./fblogin/facebook.png');
+    background-size: cover;
+}
+/* -------------------------------------------------------Home Page-------------------------- */
+
+.Nav{
+    width: 100%;
+    height: 60px;
+    background-color: #242526;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+.fb-icon{
+    width: 48px;
+    height: 45px;
+    background-image: url('./icon/FacebookMain.png');
+    background-size: cover;
+    margin: 7px -2px;
+    position: absolute;
+    cursor: pointer;
+}
+#searcBox{
+    width: 227px;
+    height: 36px;
+    border: none;
+    background-color: #3A3B3C;
+    outline: none;
+    position: absolute;
+    margin: 10px 55px;
+    border-radius: 27px;
+    color: #e4e6eb;
+    font-size: 15px;
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+.nav-icon-box{
+    width: 615px;
+    height: 60px;
+    margin: 0px 307px;
+    position: absolute;
+}
+.inner-nav-icon-box{
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+
+}
+.home-icon{
+    width: 29px;
+    height: 29px;
+    background-image: url('./icon/Home.png');
+    margin: 11px 39px;
+    background-size: cover;
+    cursor: pointer;
+}
+.inner-nav-icon-box2{
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 3px;
+    cursor: pointer;
+    left: 116px;
+}
+.inner-nav-icon-box:hover{
+    border: 0.7px solid rgba(255, 255, 255, 0.582);
+    top: 3.6px;
+    left: -0.6px;
+}
+.inner-nav-icon-box2:hover{
+    border: 1px solid rgba(255, 255, 255, 0.582);
+    top: 2px;
+    left: 115px;
+}
+.inner-nav-icon-box3:hover{
+    border: 0.7px solid rgba(255, 255, 255, 0.582);
+    left: 233.6px;
+    top: 3.6px;
+}
+.inner-nav-icon-box4:hover{
+    border: 0.7px solid rgba(255, 255, 255, 0.582);
+    top: 3.5px;
+    right: 150px;
+}
+.inner-nav-icon-box5:hover{
+    border: 0.7px solid rgba(255, 255, 255, 0.582);
+    right: 33.3px;
+    top: 3.6px;
+}
+.inner-nav-icon-box3{
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    left: 234px;
+}
+.inner-nav-icon-box4{
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    right: 151px;
+}
+.inner-nav-icon-box5{
+    width: 110px;
+    height: 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 4px;
+    cursor: pointer;
+    right: 34px;
+}
+.page-icon{
+    width: 30px;
+    height: 32px;
+    background-image: url('./icon/Page.png');
+    position: absolute;
+    background-size: cover;
+    margin: 9px 40px;
+}
+.video-icon{
+    width: 37px;
+    height: 29px;
+    background-image: url('./icon/video.png');
+    position: absolute;
+    background-size: cover;
+    margin: 12px 35px;
+}
+.marketplace-icon{
+    width: 32px;
+    height: 31px;
+    background-image: url('./icon/marketplace.png');
+    position: absolute;
+    background-size: cover;
+    margin: 11px 38px;
+}
+.group-icon{
+    width: 31px;
+    height: 31px;
+    background-image: url('./icon/group.png');
+    position: absolute;
+    background-size: cover;
+    margin: 13px 38px;
+}
+.nav-icon-box-two{
+    width: 195px;
+    height: 59px;
+    position: absolute;
+    top: 0px;
+    right: 25px;
+}
+.inner-nav-icon-box1-two{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #4E4F50;
+    margin: 9px 0px;
+    position: absolute;
+    cursor: pointer;
+}
+.inner-nav-icon-box1-two:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+.inner-nav-icon-box2-two:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+.inner-nav-icon-box3-two:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+.inner-nav-icon-box4-two:hover{
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+.inner-nav-icon-box2-two{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #4E4F50;
+    margin: 9px 48px;
+    position: absolute;
+    cursor: pointer;
+}
+.inner-nav-icon-box3-two{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #4E4F50;
+    margin: 9px 97px;
+    position: absolute;
+    cursor: pointer;
+}
+.inner-nav-icon-box4-two{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #4E4F50;
+    margin: 9px 148px;
+    position: absolute;
+    cursor: pointer;
+}
+.plus-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url('./icon/plus.png');
+    background-size: cover;
+    margin: 11px 11px;
+}
+.massenger-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url('./icon/blackberry-messenger.png');
+    background-size: cover;
+    margin: 11px 11px;
+}
+.bell-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url('./icon/bell.png');
+    background-size: cover;
+    margin: 11px 11px;
+}
+.arrow-icon{
+    width: 20px;
+    height: 20px;
+    background-image: url('./icon/down-arrow.png');
+    background-size: cover;
+    margin: 11px 11px;
+}
+.profile-idt{
+    width: 98px;
+    height: 40px;
+    position: absolute;
+    top: 13px;
+    right: 247px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.profile-idt:hover{
+    background-color: rgba(247, 247, 247, 0.329);
+}
+.profile-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/kausar.jpg');
+    border-radius: 50%;
+    background-size: cover;
+    margin: 7px 2px;
+    position: absolute;
+}
+.profile-name{
+    color: #e4e6eb;
+    size: 15px;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    margin: 10px 39px;
+    font-family: "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+
+/* Left Section */
+.Left-Section{
+    width: 305px;
+    height:550px;
+    position: absolute;
+    top:70px;
+    left: 20px;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+.Left-Section::-webkit-scrollbar {
+    width: 8px;
+}
+.Left-Section::-webkit-scrollbar:hover{
+    background-color: #ffffff23;
+}
+.Left-Section::-webkit-scrollbar-thumb{
+    background-color: #ffffff77;
+    border-radius: 10px;
+}
+
+
+.Profile-left-section{
+    height: 300px;
+    width: 100%;
+    position: absolute;
+    border-bottom: 1px solid rgba(219, 215, 215, 0.356);
+}
+.profile-link{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    border-radius: 5px;
+}
+.profile-link:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+.profile-covid:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+.profile-friend:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+.profile-video:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+.profile-seemore:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+.profile-massenger:hover{
+    background-color: rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+}
+
+.profile-link-icon{
+    background-image: url('./images/kausar.jpg');
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin: 8px 7px;
+
+}
+.profile-link-icon-name{
+    display: inline-block;
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 5px 39px;
+    inline-size: max-content;
+}
+/* covid */
+.profile-covid{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    margin: 49px 0px;
+    border-radius: 5px;
+}
+.covid-link-icon{
+    background-image: url('./icon/covid.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 2px 6px;
+}
+.profile-link-icon-covid{
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 42px;
+    display: inline-block;
+    position: absolute;
+    inline-size: max-content;
+}
+/* Friend */
+.profile-friend{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    margin: 99px 0px;
+    border-radius: 5px;
+}
+.friend-link-icon{
+    background-image: url('./icon/friend.png');
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 2px 6px;
+}
+.profile-link-icon-friend{
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 42px;
+    display: inline-block;
+    position: absolute;
+    inline-size: max-content;
+}
+/* Massenger */
+
+.profile-massenger{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    margin: 140px 0px;
+    border-radius: 5px;
+}
+.massenger-link-icon{
+    background-image: url('./icon/massenger.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin: 7px 7px;
+}
+.profile-link-icon-massenger{
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px 42px;
+    display: inline-block;
+    position: absolute;
+    inline-size: max-content;
+}
+/* videos */
+
+.profile-video{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    margin: 195px 0px;
+    border-radius: 5px;
+}
+.video-link-icon{
+    background-image: url('./icon/videos.png');
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin: 7px 7px;
+}
+.profile-link-icon-video{
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 7px 42px;
+    display: inline-block;
+    position: absolute;
+    inline-size: max-content;
+}
+/* See More */
+
+.profile-seemore{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+
+    bottom: 6px;
+    border-radius: 5px;
+}
+.seemore-link-icon{
+    background-image: url('./icon/down-arrow.png');
+    background-size: cover;
+    width: 24px;
+    height: 22px;
+    position: absolute;
+    margin: 10px 9px;
+}
+.profile-link-icon-seemore{
+    color: #e4e6eb;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 1px 36px;
+    display: inline-block;
+    position: absolute;
+    inline-size: max-content;
+}
+
+/* ShortCuts part */
+
+.Sortcut{
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 301px;
+}
+.Sortcut-inner{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+}
+.short-icon-name{
+    font-size: 17px;
+    color: #b0b3b8;
+    font-weight: 600;
+    position: absolute;
+    display: inline-block;
+    top: -6px;
+}
+.short-icon-name-2{
+    font-size: 15px;
+    color: #2e89ff;
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-weight: 400;
+}
+/* ShortCuts Part two*/
+
+.Sortcut-inner-two{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 51px;
+}
+.short-icon-two{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/billgates.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-two{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part three */
+
+.Sortcut-inner-three{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 107px;
+}
+.short-icon-three{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/mark.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-three{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part four */
+
+.Sortcut-inner-four{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 160px;
+}
+.short-icon-four{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/rabindra.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-four{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part five */
+
+.Sortcut-inner-five{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 212px;
+}
+.short-icon-five{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/kazinozrul.png');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-five{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part six */
+
+.Sortcut-inner-six{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 265px;
+}
+.short-icon-six{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/suunyleon.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-six{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+
+/* shortCut part six */
+
+.Sortcut-inner-seven{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 318px;
+}
+.short-icon-seven{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/SteveJobs.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-seven{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part eight */
+
+.Sortcut-inner-eight{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 371px;
+}
+.short-icon-eight{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/rasmika.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-eight{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part Nine */
+
+.Sortcut-inner-nine{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 424px;
+}
+.short-icon-nine{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/miakhalifa.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-nine{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+/* shortCut part Ten */
+
+.Sortcut-inner-ten{
+    width: 100%;
+    position: absolute;
+    height: 45px;
+    border-radius: 5px;
+    margin-top: 477px;
+}
+.short-icon-ten{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url('./images/JannatZubairRahmani.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    margin: 8px 15px;
+}
+.short-icon-name-ten{
+    font-size: 15px;
+    font-weight: 400;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 6px 45px;
+}
+.Sortcut-inner-two:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-three:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-four:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-five:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-six:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-seven:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-eight:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-nine:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+.Sortcut-inner-ten:hover{
+    background-color: #ffffff49;
+    cursor: pointer;
+}
+
+
+/* Right Section  */
+
+.right-section{
+    width: 300px;
+    height: 600px;
+    position: absolute;
+    top: 66px;
+    right: 12px;
+    position: fixed;
+    overflow-x: hidden;
+}
+.right-section::-webkit-scrollbar{
+    width: 6px;
+}
+.right-section::-webkit-scrollbar-thumb{
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.336);
+}
+.page-txt{
+    font-size: 17px;
+    color: #b0b3b8;
+    font-weight: 600;
+    position: absolute;
+    left: 7px;
+    top: 0;
+}
+.treedots{
+    width: 16px;
+    height: 16px;
+    background-image: url(./icon/more.png);
+    position: absolute;
+    top: 21px;
+    right: 14px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.treedots:hover{
+    background-color: #ffffff44;
+    cursor: pointer;
+}
+.page-details{
+    width:100%;
+    height:140px;
+    position: absolute;
+    top: 46px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.486);
+}
+.hover-page{
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    top: 3px;
+
+    border-radius: 6px;
+}
+.hover-page:hover{
+    background-color: #ffffff4f;
+    cursor: pointer;
+}
+.page-ico{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background-image: url("./images/kausarhsn.png");
+    background-size: cover;
+    margin: 9px 3px;
+    border-radius: 50%;
+}
+.page-name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    position: absolute;
+    margin: 3px 41px;
+    inline-size: max-content;
+    display: inline-block;
+}
+.notifications-hover{
+    width: 282px;
+    height: 35px;
+    margin-top: 53px;
+
+    border-radius: 6px;
+    margin: 53px 15px;
+}
+.notifications-hover:hover{
+    background-color: #ffffff4f;
+    cursor: pointer;
+}
+.noti-ico{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('./icon/bell2.png');
+    top: 64px;
+    left: 18px;
+    background-size: cover;
+}
+.noti-txt{
+    font-size: 13px;
+    color: #b0b3b8;
+    position: absolute;
+    margin: -2px 28px;
+    font-weight: 600;
+}
+.promote-hover{
+    width: 282px;
+    height: 35px;
+
+    border-radius: 6px;
+    margin: -47px 15px;
+
+}
+.promote-hover:hover{
+    background-color: #ffffff4f;
+    cursor: pointer;
+}
+.promote-ico{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url('./icon/campaign.png');
+    top: 103px;
+    left: 22px;
+    background-size: cover;
+}
+.promote-txt{
+    font-size: 13px;
+    color: #b0b3b8;
+    position: absolute;
+    margin: 0px 26px;
+    font-weight: 600;
+    inline-size: max-content;
+}
+.birtday-details{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+    position: absolute;
+    margin: 187px 0px;
+}
+.birt-txt{
+    font-size: 17px;
+    color: #b0b3b8;
+    font-weight: 600;
+    position: absolute;
+    margin: 10px 7px;
+}
+.birt-ico{
+    width: 33px;
+    height: 33px;
+    background-image: url('./icon/birtday.png');
+    background-size: cover;
+    position: absolute;
+    margin: 48px 0px;
+}
+.birt-name-txt{
+    font-size: 15px;
+    color: #e4e6eb;
+    font-weight: 600;
+    inline-size: max-content;
+    margin: 8px 40px;
+}
+.main-contact{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 299px;
+}
+.conct-txt{
+    font-size: 17px;
+    color: #b0b3b8;
+    font-weight: 600;
+    margin: 18px 0px;
+}
+.Room-icon{
+    width: 19px;
+    height: 19px;
+    background-size: cover;
+    position: absolute;
+    top: 24px;
+    right: 75px;
+    opacity: 0.6;
+    background-image: url('./icon/film.png');
+    cursor: pointer;
+}
+.Seach-icon{
+    width: 13px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    top: 27px;
+    right: 42px;
+    opacity: 0.6;
+    background-image: url('./icon/search.png');
+    cursor: pointer;
+}
+.threedots-icon{
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    top: 23px;
+    right: 12px;
+    opacity: 0.6;
+    background-image: url('./icon/more.png');
+    cursor: pointer;
+}
+/* Contact List */
+
+.hover-right-one{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 62px;
+    cursor: pointer;
+}
+.right-one-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/mark.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-one-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact two */
+
+.hover-right-two{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 115px;
+    cursor: pointer;
+}
+.right-two-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/neha.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-two-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact three */
+
+.hover-right-three{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 168px;
+    cursor: pointer;
+}
+.right-three-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/JannatZubairRahmani.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-three-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+
+/* Contact Four */
+
+.hover-right-four{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 221px;
+    cursor: pointer;
+}
+.right-four-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/Jacqueline.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-four-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact five */
+
+.hover-right-five{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 274px;
+    cursor: pointer;
+}
+.right-five-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/avneet.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-five-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact six */
+
+.hover-right-six{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 327px;
+    cursor: pointer;
+}
+.right-six-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/atif.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-six-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact seven */
+
+.hover-right-seven{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 380px;
+    cursor: pointer;
+}
+.right-seven-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/SteveJobs.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-seven-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 8 */
+
+.hover-right-eight{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 433px;
+    cursor: pointer;
+}
+.right-eight-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/dwayne.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-eight-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 9 */
+
+.hover-right-nine{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 486px;
+    cursor: pointer;
+}
+.right-nine-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/danish.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-nine-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 10 */
+
+.hover-right-ten{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 539px;
+    cursor: pointer;
+}
+.right-ten-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/sonu.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-ten-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 11 */
+
+.hover-right-11{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 592px;
+    cursor: pointer;
+}
+.right-11-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/trump.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-11-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 12 */
+
+.hover-right-12{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 645px;
+    cursor: pointer;
+}
+.right-12-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/varun.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-12-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+/* Contact 13 */
+
+.hover-right-13{
+    width: 100%;
+    height: 45px;
+    border-radius: 7px;
+    position: absolute;
+    top: 698px;
+    cursor: pointer;
+}
+.right-13-ico{
+    width: 30px;
+    height: 30px;
+    background-image: url('./images/karina.jpg');
+    left:10px;
+    background-size: cover;
+    position: absolute;
+    border-radius: 50%;
+    top: 9px;
+}
+.right-13-txt{
+    font-size: 15px;
+    font-weight: 500;
+    color: #e4e6eb;
+    display: inline-block;
+    inline-size: max-content;
+    margin: 14px 55px;
+}
+.hover-right-one:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-two:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-three:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-four:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-five:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-six:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-seven:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-eight:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-nine:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-ten:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-11:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-12:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+.hover-right-13:hover{
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+
+/* Story Box Design */
+.story-box{
+    width: 583px;
+    height: 190px;
+    position: absolute;
+    top:65px;
+    left: 354px;
+}
+.create-box{
+    width: 108px;
+    height: 123px;
+    background-image: url('./images/kausar.jpg');
+    border-radius: 15px 15px 0px 0px;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+}
+.create-box:hover{
+    opacity: 0.8;
+}
+.create-box-2{
+    width: 108px;
+    height: 100%;
+    background-color: #202122;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
+}
+.create-box-icon{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 102px 30px;
+    background-color: #297BE5;
+    border: 5px solid #202122;
+    border-radius: 50%;
+}
+.create-box-icon-inner{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-image: url('./icon/plus.png');
+    background-size: cover;
+    margin: 10px 10px;
+}
+.create-box-txt{
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff;
+    display: inline-block;
+    inline-size: max-content;
+    position: absolute;
+    bottom: 0;
+    margin: 2px 23px;
+}
+.story-one{
+    width:108px;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    left: 114px;
+    top: 0;
+    background-image: url('./images/rasmika.jpg');
+    background-size: cover;
+}
+.story-one:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.inner-story-one{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+    background-image: url('./images/rasmika.jpg');
+    background-size: cover;
+    border: 4px solid #2D88FF;
+}
+.story-one-txt{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+}
+/* story-two */
+
+.story-two{
+    width:108px;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    left: 228px;
+    top: 0;
+    background-image: url('./images/karina.jpg'),linear-gradient(white,rgb(0, 0, 0));
+    background-size: cover;
+}
+.story-two:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.inner-story-two{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+    background-image: url('./images/karina.jpg');
+    background-size: cover;
+    border: 4px solid #2D88FF;
+
+}
+.story-two-txt{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+}
+/* story-three */
+
+.story-three{
+    width:108px;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    left: 342px;
+    top: 0;
+    background-image: url('./images/neha.jpg'),linear-gradient(white,rgb(0, 0, 0));
+    background-size: cover;
+}
+.story-three:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.inner-story-three{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+    background-image: url('./images/neha.jpg');
+    background-size: cover;
+    border: 4px solid #2D88FF;
+
+}
+.story-three-txt{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+}
+/* story-four */
+
+.story-four{
+    width:108px;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px 15px 15px 15px;
+    left: 456px;
+    top: 0;
+    background-image: url('./images/suunyleon.jpg'),linear-gradient(white,rgb(0, 0, 0));
+    background-size: cover;
+}
+.story-four:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.inner-story-four{
+    width:30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 50%;
+    left:0;
+    top: 0;
+    background-image: url('./images/suunyleon.jpg');
+    background-size: cover;
+    border: 4px solid #2D88FF;
+
+}
+.story-four-txt{
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    bottom: -4px;
+    left: 22px;
+}
+.story-arrow{
+    background-color: #525355;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 69px;
+    right: -8px;
+    cursor: pointer;
+}
+.story-arrow:hover{
+    background-color: #424242;
+}
+.story-arrow-icon{
+    background-image: url('./icon/arrow.png');
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin: 9px 10px;
+    background-size: cover;
+}
+.post-box{
+    width: 500px;
+    height: 130px;
+    border-radius: 10px;
+    position: absolute;
+    top: 287px;
+    left: 389px;
+    background-color: #242526;
+}
+.post-profile-ico{
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/kausar.jpg');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.post-input{
+    width: 420px;
+    height: 40px;
+    background-color: #424344;
+    border-radius: 25px;
+    position: absolute;
+    margin: 15px 73px;
+    cursor: pointer;
+}
+.post-input:hover{
+    background-color:#636568;
+}
+.input-txt{
+    color: rgb(176,179,184);
+    font-size: 17px;
+    position: absolute;
+    inline-size: max-content;
+    font-weight: 500;
+    margin: 8px 15px;
+}
+.line-break{
+    border-top: 0px solid #818181;
+    top: 67px;
+    left: 0px;
+    position: relative;
+    width: 400px;
+}
+/* <Video hover Section> */
+.video-hover{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.video-ico{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/videlive.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 22px;
+}
+.vide-txt{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 54px;
+}
+/* <Video hover Section> */
+.picture-hover{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 159px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.picture-icon{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/picture.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 22px;
+}
+.picture-txt{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 54px;
+}
+/* <Video hover Section> */
+.fellings-hover{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    right: 28px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.fellings-icon{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/fellings.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 16px;
+}
+.fellings-txt{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 45px;
+}
+.video-hover:hover{
+    background-color: #ffffff1f;
+}
+.picture-hover:hover{
+    background-color: #ffffff1f;
+}
+.fellings-hover:hover{
+    background-color: #ffffff1f;
+}
+/* MAin Post Section */
+
+.main-post-box{
+    width: 500px;
+    height: 535px;
+    position: absolute;
+    left: 386px;
+    top: 429px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+.main-post-icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('./images/kausarhsn.png');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+}
+.main-post-txt{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+.post-pic{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/IMG_3954.JPG');
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+}
+/* Reaction Box */
+.rection-box{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(250, 250, 250, 0.295);
+    bottom: 0px;
+    position: absolute;
+}
+.like-hover{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.like-hover:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.like-ico{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/like.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.like-txt{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.comment-hover{
+    width: 150px;
+    height: 30px;
+
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 158px;
+}
+.comment-hover:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.comment-ico{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/comment.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.comment-txt{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.share-hover{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    right: 32px;
+}
+.share-hover:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.share-ico{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/share.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.share-txt{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.main-post-txt{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+.post-pic{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/IMG_3954.JPG');
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+}
+
+/* MAin Post Section */
+
+.main-post-box-2{
+    width: 500px;
+    height: 535px;
+    position: absolute;
+    left: 386px;
+    top: 982px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+.main-post-icon-2{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('./images/billgates.jpg');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+}
+.main-post-txt-2{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-2{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-2:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-2{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+
+/* Reaction Box */
+.rection-box-2{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(250, 250, 250, 0.295);
+    bottom: 0px;
+    position: absolute;
+}
+.like-hover-2{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.like-hover-2:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.like-ico-2{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/like.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.like-txt-2{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.comment-hover-2{
+    width: 150px;
+    height: 30px;
+
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 158px;
+}
+.comment-hover-2:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.comment-ico-2{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/comment.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.comment-txt-2{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.share-hover-2{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    right: 32px;
+}
+.share-hover-2:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.share-ico-2{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/share.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.share-txt-2{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+
+.main-post-txt-2{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-2{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-2:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-2{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+.post-pic-2{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/billgates.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+}
+
+/* MAin Post Section 3 */
+
+.main-post-box-3{
+    width: 500px;
+    height: 535px;
+    position: absolute;
+    left: 386px;
+    top: 1531px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+.main-post-icon-3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('./images/mark.jpg');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+}
+.main-post-txt-3{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-3{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-3:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-3{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+
+/* Reaction Box */
+.rection-box-3{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(250, 250, 250, 0.295);
+    bottom: 0px;
+    position: absolute;
+}
+.like-hover-3{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.like-hover-3:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.like-ico-3{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/like.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.like-txt-3{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.comment-hover-3{
+    width: 150px;
+    height: 30px;
+
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 158px;
+}
+.comment-hover-3:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.comment-ico-3{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/comment.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.comment-txt-3{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.share-hover-3{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    right: 32px;
+}
+.share-hover-3:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.share-ico-3{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/share.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.share-txt-3{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+
+.main-post-txt-3{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-3{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-3:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-3{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+.post-pic-3{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/mark.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+}
+
+/* Profile Section */
+.main-profile{
+    width: 100%;
+    height: 2000px;
+    background-color: #18191A;
+    position: absolute;
+}
+.header-profile-section{
+    width: 100%;
+    height: 525px;
+    position: absolute;
+    top: 60px;
+    background-image: linear-gradient(4deg,#242526 70%,#fe00fe70);
+
+}
+.cover-pic{
+    width: 940px;
+    height: 350px;
+    background-image: url('./images/Faceboook\ cover.jpg');
+    background-size: cover;
+    position: absolute;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0px 170px;
+}
+.my-profile-icon{
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    background-image: url('./images/kausar.jpg');
+    background-size: cover;
+    border: 4px solid #242526;
+    position: absolute;
+    bottom: -33px;
+    left: 380px;
+}
+.profile-name-txt-front{
+    left: 380px;
+    font-size: 32px;
+    bottom: -112px;
+    color: #e4e6eb;
+    position: absolute;
+    font-weight: 800;
+}
+.bio-txt-front{
+    left: 364px;
+    font-size: 17px;
+    bottom: -121px;
+    color: #b0b3b8;
+    position: absolute;
+}
+.edit-txt-front{
+    left: 453px;
+    font-size: 15px;
+    bottom: -145px;
+    color: #2e89ff;
+    position: absolute;
+}
+.profile-line-break{
+    border: 0.3px solid rgba(255, 255, 255, 0.171);
+    bottom: 32px;
+    width: 954px;
+    position: absolute;
+    left: 173px;
+}
+.div-2{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 173px;
+    cursor: pointer;
+}
+.div-2:hover{background-color: #ffffff2f;}
+.txt-2{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-3{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 263px;
+    cursor: pointer;
+}
+.div-3:hover{background-color: #ffffff2f;}
+.txt-4{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-4{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 357px;
+    cursor: pointer;
+}
+.div-4:hover{background-color: #ffffff2f;}
+.txt-3{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-5{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 450px;
+    cursor: pointer;
+}
+.div-5:hover{background-color: #ffffff2f;}
+.txt-5{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-6{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 542px;
+    cursor: pointer;
+}
+.div-6:hover{background-color: #ffffff2f;}
+.txt-6{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-7{
+    width: 85px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    left: 632px;
+    cursor: pointer;
+}
+.div-7:hover{background-color: #ffffff2f;}
+.txt-7{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-8{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    right: 400px;
+    cursor: pointer;
+    background-color: #ffffff2a;
+}
+.div-8:hover{background-color: #ffffff5e;}
+.txt-8{
+    color: #b0b3b8;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 9px 11px;
+}
+.div-9{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    right: 290px;
+    cursor: pointer;
+    background-color: #ffffff2a;
+}
+.div-9:hover{background-color: #ffffff5e;}
+.Seach-icon-2{
+    background-image: url('./icon/search.png');
+    width: 25px;
+    height: 22px;
+    background-size: cover;
+    margin: 8px 38px;
+}
+
+.div-10{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+    right: 180px;
+    cursor: pointer;
+    background-color: #ffffff2a;
+}
+.div-10:hover{background-color: #ffffff5e;}
+.threedots-icon-2{
+    background-image: url('./icon/more.png');
+    width: 17px;
+    height: 15px;
+    background-size: cover;
+    margin: 12px 38px;
+}
+/* Post Box Section */
+.post-box-2{
+    width: 500px;
+    height: 130px;
+    border-radius: 10px;
+    position: absolute;
+    top: 609px;
+    left: 590px;
+    background-color: #242526;
+}
+.post-profile-ico-2{
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/kausar.jpg');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.post-input-2{
+    width: 420px;
+    height: 40px;
+    background-color: #424344;
+    border-radius: 25px;
+    position: absolute;
+    margin: 15px 73px;
+    cursor: pointer;
+}
+.post-input-2:hover{
+    background-color:#636568;
+}
+.input-txt-2{
+    color: rgb(176,179,184);
+    font-size: 17px;
+    position: absolute;
+    inline-size: max-content;
+    font-weight: 500;
+    margin: 8px 15px;
+}
+.line-break-2{
+    border-top: 0px solid #818181;
+    top: 67px;
+    left: 0px;
+    position: relative;
+    width: 400px;
+}
+/* <Video hover Section> */
+.video-hover-2{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 15px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.video-ico-2{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/videlive.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 22px;
+}
+.vide-txt-2{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 54px;
+}
+/* <Video hover Section> */
+.picture-hover-2{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 159px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.picture-icon-2{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/picture.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 22px;
+}
+.picture-txt-2{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 54px;
+}
+/* <Video hover Section> */
+.fellings-hover-2{
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    right: 28px;
+    bottom: 8px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.fellings-icon-2{
+    width: 25px;
+    height: 25px;
+    background-image: url('./icon/fellings.png');
+    background-size: cover;
+    position: absolute;
+    margin: 6px 16px;
+}
+.fellings-txt-2{
+    position: absolute;
+    font-size: 15px;
+    color: #b0b3b8;
+    font-weight: 500;
+    inline-size: max-content;
+    margin: 7px 45px;
+}
+.video-hover-2:hover{
+    background-color: #ffffff1f;
+}
+.picture-hover-2:hover{
+    background-color: #ffffff1f;
+}
+.fellings-hover-2:hover{
+    background-color: #ffffff1f;
+}
+.profle-left{
+    width: 366px;
+    height: 468px;
+    background-image: url('./icon/Capture.PNG');
+    background-size: cover;
+    position: absolute;
+    top: 606px;
+    left: 192px;
+
+}
+/* MAin Post Section */
+
+.main-post-box-one{
+    width: 500px;
+    height: 535px;
+    position: absolute;
+    left: 593px;
+    top: 758px;
+    border-radius: 10px;
+    background-color: #242526;
+}
+.main-post-icon-one{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url('./images/kausar.jpg');
+    background-size: cover;
+    position: absolute;
+    margin: 15px 15px;
+}
+.main-post-txt-one{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-one{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-one:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-one{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+.post-pic-one{
+    width: 100%;
+    height: 400px;
+    background-image: url('./images/1.JPG');
+    background-size: cover;
+    position: absolute;
+    top: 64px;
+}
+/* Reaction Box */
+.rection-box-one{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid rgba(250, 250, 250, 0.295);
+    bottom: 0px;
+    position: absolute;
+}
+.like-hover-one{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+.like-hover-one:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.like-ico-one{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/like.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.like-txt-one{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.comment-hover-one{
+    width: 150px;
+    height: 30px;
+
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    margin-left: 158px;
+}
+.comment-hover-one:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.comment-ico-one{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/comment.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.comment-txt-one{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.share-hover-one{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    border-radius: 10px;
+    margin-top: 4px;
+    cursor: pointer;
+    right: 32px;
+}
+.share-hover-one:hover{
+    background-color: rgba(255, 255, 255, 0.103);
+}
+.share-ico-one{
+    width: 19px;
+    height: 19px;
+    background-image: url('./icon/share.png');
+    background-size: cover;
+    position: absolute;
+    margin: 7px 22px;
+}
+.share-txt-one{
+    color: #b0b3b8;
+    font-size: 15px;
+    display: inline-block;
+    position: absolute;
+    margin: 0px 0px;
+    font-weight: 500;
+    margin: 6px 47px;
+}
+.main-post-txt-one{
+    color: #e4e6eb;
+    font-size: 15px;
+    position: absolute;
+    inline-size: max-content;
+    margin: 26px 60px;
+    font-weight: 500;
+}
+.three-dots-top-one{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 23px;
+    top: 21px;
+    cursor: pointer;
+}
+.three-dots-top-one:hover{
+    background-color: rgba(255, 255, 255, 0.144);
+}
+.three-dots-top-inner-one{
+    width: 15px;
+    height: 15px;
+    background-image: url('./icon/more.png');
+    background-size: cover;
+    position: absolute;
+    margin: 10px 10px;
+}
+  
